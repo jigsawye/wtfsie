@@ -6,12 +6,12 @@ var config = require('./webpack.config');
 
 var server = new WebpackDevServer(webpack(config), {
     contentBase: 'dist',
-    devtool: 'eval-source-map',
+    publicPath: '/scripts/',
     hot: true,
     stats: {
         progress: true,
         colors: true
-    },
+    }
 });
 
 server.listen(3000, 'localhost', function (err) {
