@@ -1,6 +1,6 @@
 {
   "name": "what-would-you-like-to-eat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A funny project for lerning react.",
   "scripts": {
     "dev": "node dev.js",
