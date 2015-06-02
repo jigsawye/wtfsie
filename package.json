@@ -4,9 +4,8 @@
   "description": "Funny project",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production webpack",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base dist"
+    "dev": "node dev.js",
+    "build": "./node_modules/.bin/webpack NODE_ENV=production"
   },
   "author": "Jigsaw",
   "license": "MIT",
