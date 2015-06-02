@@ -1,20 +1,30 @@
 {
   "name": "what-would-you-like-to-eat",
   "version": "1.0.0",
-  "description": "Funny project",
-  "main": "webpack.config.js",
+  "description": "A funny project for lerning react.",
   "scripts": {
     "dev": "node dev.js",
-    "build": "./node_modules/.bin/webpack NODE_ENV=production"
+    "build": "NODE_ENV=production ./node_modules/.bin/webpack"
   },
-  "author": "Jigsaw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jigsawye/wtfsie"
+  },
+  "author": "Jigsaw Ye <jigsaw.ye@gmail.com> (http://github.com/jigsawye)",
   "license": "MIT",
+  "dependencies": {
+    "babel-runtime": "^5.4.7",
+    "classnames": "^2.1.2",
+    "react": "*"
+  },
   "devDependencies": {
-    "babel-core": "^5.1.11",
-    "babel-loader": "^5.0.0",
-    "react": "^0.13.2",
-    "react-hot-loader": "^1.2.5",
-    "webpack": "^1.8.8",
-    "webpack-dev-server": "^1.8.2"
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "eslint": "*",
+    "eslint-plugin-react": "*",
+    "react-hot-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
   }
 }
