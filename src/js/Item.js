@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
 export default class Item extends React.Component {
+    static propTypes = {
+        onDelete: PropTypes.func.isRequired,
+        foods: PropTypes.array.isRequired
+    }
 
-    constructor(...args) {
-        super(args);
+    constructor(props) {
+        super(props);
+        console.log('test');
     }
 
     onDelete(label) {

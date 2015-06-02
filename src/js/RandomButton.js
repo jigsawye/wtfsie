@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 export default class RandomButton extends React.Component {
+    static propTypes = {
+        random: PropTypes.func.isRequired
+    }
+
     render() {
         return (
             <button

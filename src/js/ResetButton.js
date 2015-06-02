@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 export default class ResetButton extends React.Component {
+    static propTypes = {
+        destroyAll: PropTypes.func.isRequired
+    }
+
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
             <button

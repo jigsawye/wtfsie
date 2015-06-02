@@ -7,8 +7,8 @@ import ResetButton from './ResetButton';
 
 export default class Main extends React.Component {
 
-    constructor(...args) {
-        super(...args);
+    constructor(props) {
+        super(props);
         this.state = { foods: []};
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
@@ -39,9 +39,9 @@ export default class Main extends React.Component {
     random() {
         const randomId = Math.floor(Math.random() * this.state.foods.length);
 
-        const foods = this.state.foods.map(function(item, id) {
+        const foods = this.state.foods.map(function (item, id) {
             const food = item.food;
-            const hightlight = randomId == id ? true : false;
+            const hightlight = randomId === id ? true : false;
             return {food, hightlight};
         });
 
@@ -58,7 +58,7 @@ export default class Main extends React.Component {
                 <Header />
                 <Form onSubmit={this.handleSubmit} />
                 <Item foods={this.state.foods} onDelete={this.handleDelete} />
-                <RandomButton random={this.random} /> 
+                <RandomButton random={this.random} />
                 <ResetButton destroyAll={this.destroyAll} />
             </div>
         );
